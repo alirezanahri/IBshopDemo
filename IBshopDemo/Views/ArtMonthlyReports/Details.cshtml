@@ -1,0 +1,351 @@
+﻿@model IBshopDemo.Models.ArtMonthlyReport
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="content-wrapper">
+    <!-- Content -->
+    <div class="container-xxl flex-grow-1 container-p-y table-responsive">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title">جزئیات گزارش</h5>
+                <h4>واحد گرافیک</h4>
+                <hr />
+                <div class="d-flex justify-content-between align-items-center row py-3 gap-3 gap-md-0">
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <dl>
+                            <div class="row">
+                                <div class="col-6 mt-1">
+                                    <div class="row">
+                                        <dt class="col-sm-7">
+                                            @Html.DisplayNameFor(model => model.Year)
+                                        </dt>
+                                        <dd class="col-sm-5">
+                                            @Html.DisplayFor(model => model.Year)
+                                        </dd>
+                                    </div>
+
+                                </div>
+                                <div class="col-6 mt-1">
+                                    <div class="row">
+                                        <dt class="col-sm-7">
+                                            @Html.DisplayNameFor(model => model.Month)
+                                        </dt>
+                                        <dd class="col-sm-5">
+                                            @Html.DisplayFor(model => model.Month)
+                                        </dd>
+                                    </div>
+
+                                </div>
+
+
+
+                                <div class="col-6 mt-1">
+                                    <div class="row">
+                                        <dt class="col-sm-7">
+                                            @Html.DisplayNameFor(model => model.MonthNumber)
+                                        </dt>
+                                        <dd class="col-sm-5">
+                                            @Html.DisplayFor(model => model.MonthNumber)
+                                        </dd>
+                                    </div>
+
+                                </div>
+                                <div class="col-6 mt-1">
+                                    <div class="row">
+                                        <dt class="col-sm-7">
+                                            @Html.DisplayNameFor(model => model.MrkReq)
+                                        </dt>
+                                        <dd class="col-sm-5">
+                                            @Html.DisplayFor(model => model.MrkReq)
+                                        </dd>
+                                    </div>
+
+                                </div>
+
+
+
+                                <div class="col-6 mt-1">
+                                    <div class="row">
+                                        <dt class="col-sm-7">
+                                            @Html.DisplayNameFor(model => model.CompStudy)
+                                        </dt>
+                                        <dd class="col-sm-5">
+                                            @Html.DisplayFor(model => model.CompStudy)
+                                        </dd>
+                                    </div>
+
+                                </div>
+                                <div class="col-6 mt-1">
+                                    <div class="row">
+                                        <dt class="col-sm-7">
+                                            @Html.DisplayNameFor(model => model.ArchiveDesignQty)
+                                        </dt>
+                                        <dd class="col-sm-5">
+                                            @Html.DisplayFor(model => model.ArchiveDesignQty)
+                                        </dd>
+                                    </div>
+
+                                </div>
+
+
+
+                                <div class="col-6 mt-1">
+                                    <div class="row">
+                                        <dt class="col-sm-7">
+                                            @Html.DisplayNameFor(model => model.MediaFailureQty)
+                                        </dt>
+                                        <dd class="col-sm-5">
+                                            @Html.DisplayFor(model => model.MediaFailureQty)
+                                        </dd>
+                                    </div>
+
+                                </div>
+                                <div class="col-6 mt-1">
+                                    <div class="row">
+                                        <dt class="col-sm-7">
+                                            @Html.DisplayNameFor(model => model.SiteBannerAvgTime)
+                                        </dt>
+                                        <dd class="col-sm-5">
+                                            @Html.DisplayFor(model => model.SiteBannerAvgTime)
+                                        </dd>
+                                    </div>
+
+                                </div>
+
+
+
+                                <div class="col-6 mt-1">
+                                    <div class="row">
+                                        <dt class="col-sm-7">
+                                            @Html.DisplayNameFor(model => model.BrochureDesignAvgTime)
+                                        </dt>
+                                        <dd class="col-sm-5">
+                                            @Html.DisplayFor(model => model.BrochureDesignAvgTime)
+                                        </dd>
+                                    </div>
+
+                                </div>
+                                <div class="col-6 mt-1">
+                                    <div class="row">
+                                        <dt class="col-sm-7">
+                                            @Html.DisplayNameFor(model => model.StoryDesignAvgTime)
+                                        </dt>
+                                        <dd class="col-sm-5">
+                                            @Html.DisplayFor(model => model.StoryDesignAvgTime)
+                                        </dd>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="col-6 mt-1">
+                                    <div class="row">
+                                        <dt class="col-sm-7">
+                                            @Html.DisplayNameFor(model => model.GifDesignAvgTime)
+                                        </dt>
+                                        <dd class="col-sm-5">
+                                            @Html.DisplayFor(model => model.GifDesignAvgTime)
+                                        </dd>
+                                    </div>
+
+                                </div>
+                                <div class="col-6 mt-1">
+                                    <div class="row">
+                                        <dt class="col-sm-7">
+                                            @Html.DisplayNameFor(model => model.StandDesignAvgTime)
+                                        </dt>
+                                        <dd class="col-sm-5">
+                                            @Html.DisplayFor(model => model.StandDesignAvgTime)
+                                        </dd>
+                                    </div>
+
+                                </div>
+
+
+
+                                <div class="col-6 mt-1">
+                                    <div class="row">
+                                        <dt class="col-sm-7">
+                                            @Html.DisplayNameFor(model => model.BannerDesignQty)
+                                        </dt>
+                                        <dd class="col-sm-5">
+                                            @Html.DisplayFor(model => model.BannerDesignQty)
+                                        </dd>
+                                    </div>
+
+                                </div>
+                                <div class="col-6 mt-1">
+                                    <div class="row">
+                                        <dt class="col-sm-7">
+                                            @Html.DisplayNameFor(model => model.BrochureDesignQty)
+                                        </dt>
+                                        <dd class="col-sm-5">
+                                            @Html.DisplayFor(model => model.BrochureDesignQty)
+                                        </dd>
+                                    </div>
+
+                                </div>
+
+
+
+                                <div class="col-6 mt-1">
+                                    <div class="row">
+                                        <dt class="col-sm-7">
+                                            @Html.DisplayNameFor(model => model.StoryDesignQty)
+                                        </dt>
+                                        <dd class="col-sm-5">
+                                            @Html.DisplayFor(model => model.StoryDesignQty)
+                                        </dd>
+                                    </div>
+
+                                </div>
+                                <div class="col-6 mt-1">
+                                    <div class="row">
+                                        <dt class="col-sm-7">
+                                            @Html.DisplayNameFor(model => model.GifDesignQty)
+                                        </dt>
+                                        <dd class="col-sm-5">
+                                            @Html.DisplayFor(model => model.GifDesignQty)
+                                        </dd>
+                                    </div>
+
+
+                                </div>
+
+
+
+                                <div class="col-6 mt-1">
+                                    <div class="row">
+                                        <dt class="col-sm-7">
+                                            @Html.DisplayNameFor(model => model.StandDesigQty)
+                                        </dt>
+                                        <dd class="col-sm-5">
+                                            @Html.DisplayFor(model => model.StandDesigQty)
+                                        </dd>
+                                    </div>
+
+                                </div>
+                                <div class="col-6 mt-1">
+                                    <div class="row">
+                                        <dt class="col-sm-7">
+                                            @Html.DisplayNameFor(model => model.MotionQty)
+                                        </dt>
+                                        <dd class="col-sm-5">
+                                            @Html.DisplayFor(model => model.MotionQty)
+                                        </dd>
+                                    </div>
+
+                                </div>
+
+
+
+                                <div class="col-6 mt-1">
+                                    <div class="row">
+                                        <dt class="col-sm-7">
+                                            @Html.DisplayNameFor(model => model.ArchivedmotionQty)
+                                        </dt>
+                                        <dd class="col-sm-5">
+                                            @Html.DisplayFor(model => model.ArchivedmotionQty)
+                                        </dd>
+                                    </div>
+
+                                </div>
+                                <div class="col-6 mt-1">
+                                    <div class="row">
+                                        <dt class="col-sm-7">
+                                            @Html.DisplayNameFor(model => model.AppliedMotionAvgTime)
+                                        </dt>
+                                        <dd class="col-sm-5">
+                                            @Html.DisplayFor(model => model.AppliedMotionAvgTime)
+                                        </dd>
+                                    </div>
+
+                                </div>
+
+
+
+                                <div class="col-6 mt-1">
+                                    <div class="row">
+                                        <dt class="col-sm-7">
+                                            @Html.DisplayNameFor(model => model.RecordedvideoQty)
+                                        </dt>
+                                        <dd class="col-sm-5">
+                                            @Html.DisplayFor(model => model.RecordedvideoQty)
+                                        </dd>
+                                    </div>
+
+                                </div>
+                                <div class="col-6 mt-1">
+                                    <div class="row">
+                                        <dt class="col-sm-7">
+                                            @Html.DisplayNameFor(model => model.RecordedQty)
+                                        </dt>
+                                        <dd class="col-sm-5">
+                                            @Html.DisplayFor(model => model.RecordedQty)
+                                        </dd>
+                                    </div>
+
+                                </div>
+
+
+
+                                <div class="col-6 mt-1">
+                                    <div class="row">
+                                        <dt class="col-sm-7">
+                                            @Html.DisplayNameFor(model => model.NarrationEditQty)
+                                        </dt>
+                                        <dd class="col-sm-5">
+                                            @Html.DisplayFor(model => model.NarrationEditQty)
+                                        </dd>
+                                    </div>
+
+                                </div>
+                                <div class="col-6 mt-1">
+                                    <div class="row">
+                                        <dt class="col-sm-7">
+                                            @Html.DisplayNameFor(model => model.VideoArchiveQty)
+                                        </dt>
+                                        <dd class="col-sm-5">
+                                            @Html.DisplayFor(model => model.VideoArchiveQty)
+                                        </dd>
+                                    </div>
+
+                                </div>
+
+
+
+                                <div class="col-6 mt-1">
+                                    <div class="row">
+                                        <dt class="col-sm-7">
+                                            @Html.DisplayNameFor(model => model.VideoProduceAvgTime)
+                                        </dt>
+                                        <dd class="col-sm-5">
+                                            @Html.DisplayFor(model => model.VideoProduceAvgTime)
+                                        </dd>
+                                    </div>
+                                </div>
+                            </div>
+                        </dl>
+                    </div>
+                    <div>
+                        <a asp-action="Edit" asp-route-id="@Model?.ArtMonthlyReportId">Edit</a> |
+                        <a asp-action="Index">Back to List</a>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+

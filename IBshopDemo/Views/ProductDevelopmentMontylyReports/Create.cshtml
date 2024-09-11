@@ -1,0 +1,170 @@
+﻿@model IBshopDemo.Models.ProductDevelopmentMontylyReport
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+
+
+<div class="content-wrapper">
+	<!-- Content -->
+
+	<div class="container-xxl flex-grow-1 container-p-y">
+		<h4 class="py-3 mb-4">
+			<span class="text-muted fw-light">افزودن/</span>
+			گزارش جدید توسعه محصول
+		</h4>
+		<div class="row">
+			<div class="col-12">
+				<div class="card">
+					<div id="sticky-wrapper" class="sticky-wrapper" style="height: 86.9375px;">
+						<div class="card-header sticky-element bg-label-secondary d-flex justify-content-sm-between align-items-sm-center flex-column flex-sm-row" style="">
+							<h5 class="card-title mb-sm-0 me-2">توسعه محصول</h5>
+							<div class="action-btns">
+								<a asp-action="Index">
+									<button class="btn btn-label-primary me-3">
+										<span class="align-middle">بازگشت به لیست</span>
+									</button>
+								</a>
+
+							@* 	<button type="submit" class="btn btn-primary">
+									ثبت
+								</button> *@
+							</div>
+						</div>
+					</div>
+					<div class="card-body">
+						<div class="row">
+							<div class="col-lg-8 mx-auto">
+								<form asp-action="Create" asp-controller="ProductDevelopmentMontylyReports" method="post" id="form">
+									<div asp-validation-summary="ModelOnly" class="text-danger col-12"></div>
+									<div class="row">
+										<div class="form-group col-6 mt-1">
+											<label asp-for="Year" class="form-label mt-3"></label>
+											<input asp-for="Year" class="form-control mt-1 shadow-sm" />
+											<span asp-validation-for="Year" class="text-danger"></span>
+										</div>
+										<div class="form-group col-6 mt-1">
+											<label asp-for="Month" class="form-label mt-3"></label>
+											<input asp-for="Month" class="form-control mt-1 shadow-sm" />
+											<span asp-validation-for="Month" class="text-danger"></span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="form-group col-6 mt-1">
+											<label asp-for="MonthNumber" class="form-label mt-3"></label>
+											<input asp-for="MonthNumber" class="form-control mt-1 shadow-sm" />
+											<span asp-validation-for="MonthNumber" class="text-danger"></span>
+										</div>
+										<div class="form-group col-6 mt-1">
+											<label asp-for="CheckedSuggestQty" class="form-label mt-3"></label>
+											<input asp-for="CheckedSuggestQty" class="form-control mt-1 shadow-sm" />
+											<span asp-validation-for="CheckedSuggestQty" class="text-danger"></span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="form-group col-6 mt-1">
+											<label asp-for="AcceptedSuggestQty" class="form-label mt-3"></label>
+											<input asp-for="AcceptedSuggestQty" class="form-control mt-1 shadow-sm" />
+											<span asp-validation-for="AcceptedSuggestQty" class="text-danger"></span>
+										</div>
+										<div class="form-group col-6 mt-1">
+											<label asp-for="SuggestPersonnelQty" class="form-label mt-3"></label>
+											<input asp-for="SuggestPersonnelQty" class="form-control mt-1 shadow-sm" />
+											<span asp-validation-for="SuggestPersonnelQty" class="text-danger"></span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="form-group col-6 mt-1">
+											<label asp-for="EconomicalSuggestQty" class="form-label mt-3"></label>
+											<input asp-for="EconomicalSuggestQty" class="form-control mt-1 shadow-sm" />
+											<span asp-validation-for="EconomicalSuggestQty" class="text-danger"></span>
+										</div>
+										<div class="form-group col-6 mt-1">
+											<label asp-for="IbcCreaditCardCustQty" class="form-label mt-3"></label>
+											<input asp-for="IbcCreaditCardCustQty" class="form-control mt-1 shadow-sm" />
+											<span asp-validation-for="IbcCreaditCardCustQty" class="text-danger"></span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="form-group col-6 mt-1">
+											<label asp-for="IbcComplQty" class="form-label mt-3"></label>
+											<input asp-for="IbcComplQty" class="form-control mt-1 shadow-sm" />
+											<span asp-validation-for="IbcComplQty" class="text-danger"></span>
+										</div>
+										<div class="form-group col-6 mt-1">
+											<label asp-for="IbcCreadiCardReqQty" class="form-label mt-3"></label>
+											<input asp-for="IbcCreadiCardReqQty" class="form-control mt-1 shadow-sm" />
+											<span asp-validation-for="IbcCreadiCardReqQty" class="text-danger"></span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="form-group col-6 mt-1">
+											<label asp-for="IbcCreaditCardProcessAvgTime" class="form-label mt-3"></label>
+											<input asp-for="IbcCreaditCardProcessAvgTime" class="form-control mt-1 shadow-sm" />
+											<span asp-validation-for="IbcCreaditCardProcessAvgTime" class="text-danger"></span>
+										</div>
+										<div class="form-group col-6 mt-1">
+											<label asp-for="IbwDesignQty" class="form-label mt-3"></label>
+											<input asp-for="IbwDesignQty" class="form-control mt-1 shadow-sm" />
+											<span asp-validation-for="IbwDesignQty" class="text-danger"></span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="form-group col-6 mt-1">
+											<label asp-for="IbwDesignVol" class="form-label mt-3"></label>
+											<input asp-for="IbwDesignVol" class="form-control mt-1 shadow-sm" />
+											<span asp-validation-for="IbwDesignVol" class="text-danger"></span>
+										</div>
+										<div class="form-group col-6 mt-1">
+											<label asp-for="IbwDesignTime" class="form-label mt-3"></label>
+											<input asp-for="IbwDesignTime" class="form-control mt-1 shadow-sm" />
+											<span asp-validation-for="IbwDesignTime" class="text-danger"></span>
+										</div>
+									</div>
+									<div class="form-group mt-4">
+										<input type="submit" value="ثبت" class="btn btn-primary" />
+									</div>
+								</form>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+@section Scripts {
+	@{
+		await Html.RenderPartialAsync("_ValidationScriptsPartial");
+	}
+}
+@* @section Scripts {
+	<script>
+
+		$(document).ready(function () {
+			$(".submit").click(function (ev) {
+				var form = $("#form");
+				var url = form.attr('action');
+				$.ajax({
+					type: "POST",
+					url: url,
+					data: form.serialize(),
+					success: function (data) {
+
+						// Ajax call completed successfully
+						alert("Form Submited Successfully");
+					},
+					error: function (data) {
+
+						// Some error in ajax call
+						alert("some Error");
+					}
+				})
+			})
+		});
+	</script>
+
+} *@
